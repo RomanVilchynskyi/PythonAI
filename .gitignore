@@ -1,0 +1,7 @@
+/.venv
+/.venv2
+/venv3
+/tf-env
+/llama-env
+/tempCodeRunnerFile.py
+.DS_Store
