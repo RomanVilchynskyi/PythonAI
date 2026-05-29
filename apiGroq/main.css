@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.text_container {
+    width: 800px;
+    height: 70px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #cccccc73;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#input {
+    width: 90%;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid #cccccc00;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+#input:focus {
+    outline: none;
+    border-color: #be616100;
+}
+
+#submit {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightblue;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #87ceeb;
+}
+
+#submit:active {
+    background-color: #00bfff;
+}
+
+
+.message_container {
+    width: 800px;
+
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+
+.message {
+    max-width: 75%;
+    padding: 12px 18px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+.user_message {
+    background-color: #00bfff;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 5px;
+}
+
+.ai_message {
+    background-color: #f1f1f1;
+    color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 5px;
+}
+
+#response {
+    width: 800px;
+    flex: 1;
+    border-radius: 20px;
+    background-color: #ffffff00;
+    color: #333;
+    padding: 12px 18px;
+    font-size: 16px;
+    line-height: 1.4;
+    word-break: break-word;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#response::-webkit-scrollbar {
+    display: none;
+}
+
+.message_container::-webkit-scrollbar {
+    display: none;
+}
+
+.user_message {
+    background-color: #dadada;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: rgb(44, 44, 44);
+    align-self: flex-end;
+    border-bottom-right-radius: 5px;
+}

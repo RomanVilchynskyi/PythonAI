@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat App</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="response" class="message_container"></div>
+
+        <div class="text_container">
+            <input type="text" id="input" placeholder="Enter text here">
+            <button id="submit"
+                onclick="document.getElementById('input').value ? get_ai_response(document.getElementById('input').value) : null">Enter</button>
+            <input type="range" id="temperature" min="0" max="1" step="0.1" value="0.5"
+                onchange="change_temperature(this.value)">
+            <span id="temp_value">Temperature: <span id="temp_number">0.5</span>°C</span>
+        </div>
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
